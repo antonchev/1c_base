@@ -1,8 +1,8 @@
 .env
 build/
 allure-report/
-
+.idea
+.scannerwork
 ConfigDumpInfo.xml
 build
 out
-.scannerwork

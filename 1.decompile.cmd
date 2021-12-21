@@ -1,0 +1,16 @@
+@chcp 65001
+
+@rem формирование файла конфигурации. для включения раскомментируйте код ниже
+call vrunner decompile --out src/cf 
+pause
+
+@rem обновление конфигурации основной разработческой ИБ из хранилища. для включения раскомментируйте код ниже
+@rem call vrunner loadrepo %*
+@rem call vrunner updatedb %*
+
+@rem собрать внешние обработчики и отчеты в каталоге build
+@rem call vrunner compileepf src/epf/МояВнешняяОбработка build %*
+@rem call vrunner compileepf src/erf/МойВнешнийОтчет build %*
+
+@rem собрать расширения конфигурации внутри ИБ
+@rem call vrunner compileext src/cfe/МоеРасширение МоеРасширение %*
